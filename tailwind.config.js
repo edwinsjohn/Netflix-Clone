@@ -22,10 +22,10 @@ module.exports = {
       screens: {
         // sm: '480px',
         // md: '768px',
-        md_new: "830px",
+        md_new: "845px",
         // lg: '976px',
         lg_new: "1150px",
-        // xl: "1440px",
+        xl_new: "2000px",
       },
     },
   },
