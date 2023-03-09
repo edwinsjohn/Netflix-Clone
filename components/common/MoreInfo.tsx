@@ -5,6 +5,7 @@ import plainImg from "../../public/assets/loader/Netflix_LoadTime.gif";
 import Image from "next/image";
 import { motion } from "framer-motion";
 // import { MovingLogo } from "./featuringlogo";
+import Link from "next/link";
 import logoPlain from "../../public/assets/logos/logo_plain.png";
 import PlayButtonRounded from "./PlayButtonRounded";
 import { PlayBtnWhite } from "./featuringlogo";
@@ -75,7 +76,14 @@ export default function MoreInfo() {
             </motion.div>
           </div>
           <div className=" absolute flex items-center z-[21] bottom-10 scale-[50%] xl:scale-100 ml-[2%] xl:ml-[8%]">
-            <PlayBtnWhite />
+            <Link
+              href={{
+                pathname: "/player/player",
+                query: { videoLink: videoUrl },
+              }}
+            >
+              <PlayBtnWhite />
+            </Link>
             <div className=" pl-4 xl:scale-110">
               <AddToWatch />
             </div>
@@ -103,7 +111,7 @@ export default function MoreInfo() {
             </div>
             <h6 className=" tracking-wider xl:leading-6">{description}</h6>
           </div>
-          <div className=" flex flex-col items-end text-[3px] md:text-[5px] xl:text-[7px] text-netflix_text_white_light">
+          <div className="  text-[3px] md:text-[5px] xl:text-[7px] text-netflix_text_white_light">
             <h1 className=" px-5 right-0">
               <span className=" text-[#4d4c4c] tracking-normal">Cast: </span>
               <span className=" font-netflix_medium_font ">{cast}</span>

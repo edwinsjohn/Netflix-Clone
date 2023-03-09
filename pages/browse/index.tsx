@@ -15,6 +15,17 @@ export default function Browse() {
       <div className="relative z-20 hover:z-30 -top-[11rem] ">
         <FullCarousel sectionTitle={"Trending Now"} link={"/api/db/all_data"} />
       </div>
+      <div className="relative z-20 hover:z-30 -top-[11rem] ">
+        <FullCarousel sectionTitle={"Regional "} link={"/api/db/regional"} />
+      </div>
+      <div className=" w-[100%] text-center p-5 text-[#413f3f] text-[20px]">
+        <h2>
+          This is A Clone Wensite made by{" "}
+          <span>
+            <a href="https://www.edwinsjohn.info">Edwin S John</a>
+          </span>{" "}
+        </h2>
+      </div>
     </div>
   );
 }

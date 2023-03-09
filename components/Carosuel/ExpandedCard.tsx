@@ -71,7 +71,10 @@ export default function ExpandedCard(props: any) {
       <div className=" flex m-3 justify-between ">
         <div className=" flex w-[140px]  justify-around">
           <Link
-            href={{ pathname: "/home/player", query: { videoLink: videoUrl } }}
+            href={{
+              pathname: "/player/player",
+              query: { videoLink: videoUrl },
+            }}
           >
             <PlayButtonRounded />
           </Link>

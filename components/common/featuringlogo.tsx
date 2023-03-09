@@ -123,7 +123,7 @@ export default function FeaturedLogo(props: any) {
       <div className="flex w-[550px] my-10">
         <Link
           href={{
-            pathname: "/home/player",
+            pathname: "/player/player",
             query: { videoLink: videoUrl },
           }}
         >

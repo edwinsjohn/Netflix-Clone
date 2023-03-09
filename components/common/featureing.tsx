@@ -21,7 +21,7 @@ export default function Featuring() {
 
   return (
     <div className="flex justify-center">
-      <div className=" justify-center relative overflow-hidden retlative h-screen bg-gradient-to-r from-[#141414] to-transparent">
+      <div className=" justify-center relative overflow-hidden retlative max-sm:h-[450px] h-screen bg-gradient-to-r from-[#141414] to-transparent">
         <div className="relative">
           <Image
             src={selectedItem.bg ? selectedItem.bg : plainBg}
@@ -30,7 +30,7 @@ export default function Featuring() {
             height={720}
             style={{ objectFit: "contain" }}
           />
-          <div className="bottom-0 absolute z-[16]  h-48 w-[100%] bg-gradient-to-t from-netflix_bg via-netflix_bg to-transparent"></div>
+          <div className="bottom-0 absolute z-[16] max-sm:h-10 h-48 w-[100%] bg-gradient-to-t from-netflix_bg via-netflix_bg to-transparent"></div>
         </div>
         <div className="absolute top-0 z-[15] object-cover hidden">
           <video
@@ -43,7 +43,7 @@ export default function Featuring() {
             src={selectedItem.videoUrl ? selectedItem.videoUrl : plainBg}
           ></video>
         </div>
-        <div className="ml-16 absolute top-20">
+        <div className="ml-16 absolute top-20 max-sm:top-10">
           <FeaturedLogo data={selectedItem} />
           {/* <div className=" absolute right-0 text-white z-40">
           <button onClick={playVideo}>play</button>

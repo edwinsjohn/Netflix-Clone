@@ -48,7 +48,9 @@ export default function HomeNavigation() {
             onMouseLeave={() => setMenuActivation(false)}
             className="relative mx-10 text-[8px] py-4 md_new:hidden max-sm:text-[6px]"
           >
-            <h1 onMouseOver={() => setMenuActivation(true)}>Browse &#x2BC6;</h1>
+            <h1 onMouseOver={() => setMenuActivation(true)}>
+              Browse <span className="hidden sm:visible">&#x2BC6;</span>
+            </h1>
             {activateMenu ? (
               <div className="absolute z-30 w-[260px] bg-[#0000007c] -ml-14 text-[13px] mt-4 border-y-2 border-slate-400">
                 <ul className="">
