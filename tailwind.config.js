@@ -10,6 +10,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",
+        "4xl": [
+          "0 35px 35px rgba(0, 0, 0, 0.30)",
+          "0 45px 65px rgba(0, 0, 0, 0.20)",
+        ],
+      },
       colors: {
         netflix_bg: "#141414",
         netflix_text_white_light: "#e5e5e5",
