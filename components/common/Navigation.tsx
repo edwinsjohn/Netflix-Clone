@@ -33,10 +33,10 @@ export default function HomeNavigation() {
                 const color =
                   router.pathname === item.href
                     ? " text-white font-netflix_medium_font "
-                    : " text-netflix_text_white_light ";
+                    : " text-netflix_text_white_light hover:text-[#dfdcdc8f] ";
                 return (
                   <button key={index} onClick={() => handleRouting(item.href)}>
-                    <li className={"px-5  max-lg_new:px-2" + color}>
+                    <li className={"px-5  max-lg_new:px-2 " + color}>
                       <a>{item.name}</a>
                     </li>
                   </button>
