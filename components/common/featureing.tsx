@@ -32,7 +32,7 @@ export default function Featuring() {
           />
           <div className="bottom-0 absolute z-[16] max-sm:h-10 h-48 w-[100%] bg-gradient-to-t from-netflix_bg via-netflix_bg to-transparent"></div>
         </div>
-        <div className="absolute top-0 z-[15] object-cover hidden">
+        <div className="absolute top-0 object-cover ">
           <video
             className=" w-[100%] "
             height={1020}
